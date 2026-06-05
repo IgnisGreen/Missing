@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -9,42 +9,52 @@
     <script type="text/javascript" src="js/script.js"></script>
 
     <style>
-      html,
-      body,
-      .markdown-body {
-        height: 100%;
+      html {
         background-color: rgb(33, 33, 33);
         color: white;
         font-size: 16px;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
 
+      }
+
+      .h-100,
+      .markdown-body {
+        height: 100vh;
       }
 
       #form {
         width: 60%;
-        height: 100%;
         border: 0;
       }
     </style>
   </head>
 
-  <body>
+  <body class="h-100">
 
     <h1>Are you Missing someone?</h1>
 
-    <div style="display: flex; height:100%">
+    <div style="display: flex; justify-content: space-between;" class="h-100">
 
       <div style="width: 30%; display:flex; flex-direction: column; justify-content: space-between;">
-        <p>People are not attending GPN because of missing safer spaces, lack of Awareness and protection of
-          perpetrators.
-          Do you know someone who does not feel save here? Have you also almost not attended?</p>
+        <div>
+          <p>People are not attending GPN because of missing safer spaces, lack of Awareness, protection of
+            perpetrators and bad structures.
+          </p>
+        </div>
 
-        <p>Share this Form <a
-            href="https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/">https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/</a>
-        </p>
+        <div>
+          <p>
+            Did you (almost) not go to GPN?
+          </p>
+          <p>
+            Share this Form <a
+              href="https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/">https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/</a>
+          </p>
+        </div>
       </div>
 
 
-      <iframe id="form"
+      <iframe id="form" class="h-100"
         src="https://cryptpad.fr/form/#/1/view/wO139WMo4pBi-EgTQDjYAg/+VevGTyqWnlxMr+EakQ9SYiRH0X7JY2VDxhzr+9qU+Q=/embed/auditor=clp4cFdsdlFFT25ZdDZTaEQ4RGtFa0JJVk5SQTQ0aTk=/"></iframe>
 
 
