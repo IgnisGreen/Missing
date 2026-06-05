@@ -1,29 +1,28 @@
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     console.log('--- jQuery ready ---');
 
-    console.log($('#form').contents().length);
-    console.log($('#form').contents());
-
-
-
+    //yourFunction();
 
 });
 
-    //$('#form').contents().find('body').html('<div> blah </div>');
+const delay = ms => new Promise(res => setTimeout(res, ms));
 
+const yourFunction = async () => {
+    await delay(5000);
+    var body = $('#form').contents().find('body');
 
-    function waitUntilConditionIsMet() {
-  console.log($('#form').contents().length);
+    console.log($('#form').contents().find('body').find('.cp-form-creator-results-controls').length);
 
-    if ($('#form').contents().length <= 1) {
-        setTimeout(
-          //waitUntilConditionIsMet(), 
-          50000
-        );
+    // .cp-form-creator-results-controls
+    if ($('#form').contents().find('body').find('.cp-form-creator-results-controls').length < 1) {
+        yourFunction();
+        console.log("--- wait ---");
     } else {
-        // add logic for adding jQuery Library
+        console.log("--- iFrame loaded ---");
     }
 };
-//waitUntilConditionIsMet();
+
+
+
