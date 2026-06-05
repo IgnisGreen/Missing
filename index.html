@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Missing</title>
-  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="jquery-3.7.1.min.js"></script>
+
 
   <style>
     html {
@@ -21,11 +22,20 @@ iframe {
 <body>
 
 
-  <p>Test</p>
+  <p>People are not attending GPN because of missing safer spaces, lack of Awareness and protection of perpetrators.
+Do you know someone who does not feel save here? Have you also almost not attended?</p>
 
 
-  <iframe src="https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/embed/"></iframe>
+  <iframe id="form" src="https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/embed/"></iframe>
 
+<p>Share this Form https://cryptpad.fr/form/#/2/form/view/n8fvpDQTGgEeyK8fQZP5wyN5YrHXlUqZW6Go4wFEP2g/</p>
+
+<script>
+  $(document).ready(function() {
+    $("#form").contents().find("body").html("<div> blah </div>");
+});
+</script>
+  
 </body>
 
 </html>
