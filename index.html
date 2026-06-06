@@ -42,6 +42,11 @@
         justify-content: space-between;
       }
 
+      .flex-space-around {
+        display: flex;
+        justify-content: space-around;
+      }
+
       .flex-wrap {
         flex-wrap: wrap;
       }
@@ -54,6 +59,7 @@
         min-height: 1000px;
         height: 100%;
         min-width: 300px;
+        max-width: 1000px;
         flex-grow: 1;
         border: 0;
       }
@@ -89,14 +95,14 @@
 
     <div class="h-100 flex-column" style=" padding: 15px;">
 
-      <div class="h-100 flex-space-between flex-wrap">
+      <div class="h-100 flex-space-between flex-space-around flex-wrap">
 
 
         <div id="missingText" class="flex-column">
           <h1>Are you Missing someone?</h1>
 
 
-          <div style="background-color: ;">
+          <div>
             <p>Many people are not attending or able to attend GPN because of different barriers and missing
               structures, like:</p>
 
